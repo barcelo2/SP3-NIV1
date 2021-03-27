@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.numbers {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+input[type="text" i] {
+  padding: 0.5rem 2rem;
+  margin-left: 3.5rem;
+  color: #7dd56f;
+  font-size: 1rem;
+  border: 1px solid #7dd56f;
+}
+
+input[type="button" i] {
+  padding: 0.5rem 0.7rem;
+  margin-left: 10px;
+  color: #7dd56f;
+  text-transform: uppercase;
+  border: 1px solid #7dd56f;
+  margin-bottom: 3rem;
+}
+
+.par {
+  font-size: 1.4rem;
+  margin-left: 5.5rem;
+}

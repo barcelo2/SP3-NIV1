@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sprint 1 Level 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+      function sum() {
+        num1 = document.getElementById("1stnum").value;
+        num2 = document.getElementById("2ndnum").value;
+        document.getElementById("result").innerHTML =
+          parseInt(num1) + parseInt(num2);
+      }
+
+      function substract() {
+        num1 = document.getElementById("1stnum").value;
+        num2 = document.getElementById("2ndnum").value;
+
+        document.getElementById("result").innerHTML = num1 - num2;
+      }
+
+      function multiply() {
+        num1 = document.getElementById("1stnum").value;
+        num2 = document.getElementById("2ndnum").value;
+
+        document.getElementById("result").innerHTML = num1 * num2;
+      }
+
+      function divide() {
+        num1 = document.getElementById("1stnum").value;
+        num2 = document.getElementById("2ndnum").value;
+
+        document.getElementById("result").innerHTML = num1 / num2;
+      }
+    </script>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to top left, #28b487, #7dd56f);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="numbers">
+        <p> What is your first number? </p><input type="text" id="1stnum" /> 
+        <p> What is your second numer? </p><input type="text" id="2ndnum" /> 
+      </div>
+        <input type="button" onClick="sum()" value="Sum" />
+        <input type="button" onClick="substract()" value="Substract" />
+        <input type="button" onClick="multiply()" value="Multiply" />
+        <input type="button" onClick="divide()" value="Divide" />
+       <div class="par">
+        The Result is :
+        <span id="result"></span>
+       </div>
+      </form>
+</html>
